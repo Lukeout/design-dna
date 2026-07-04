@@ -64,3 +64,11 @@ pressroom tailwind preset against source values.
   makes Gauche's raw-fetch path work on this very repo; your call at push time.
 - `manifest.owner` is just `{ "name": "Luke" }` — add a URL/handle if you want
   the profile page to link out.
+
+## Phase B cross-reference (2026-07-03)
+
+Gauche consumes this format on its `design-dna-connect` branch: the schema
+JSON is vendored byte-identical into `gauche/src/lib/designdna/` with a
+line-for-line TS port of `lib/validate.mjs`. **If the schema or validator
+changes here, re-vendor both files there in the same change.** Gauche's
+BUILDLOG has the feature entry + verification screenshots.
