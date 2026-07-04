@@ -1,0 +1,48 @@
+/* Generated from tokens.json by design-dna (npm run build) — do not edit. Vibe: pressroom */
+:root {
+  --color-bg: #F6F1E7; /* Paper — warm newsprint cream. */
+  --color-surface: #FBF7EF; /* Raised paper — kbd caps, plates. */
+  --color-ink: #211B14; /* Real ink — warm near-black, never #000. */
+  --color-ink-muted: #5C5245; /* Soft ink — field labels, secondary copy (often italic). */
+  --color-ink-faint: #93887A; /* Faint ink — section labels, hints. */
+  --color-border: #211B1429; /* Light rule — ink at 16%. */
+  --color-border-strong: #211B14BF; /* Press rule — ink at 75%. Double rules under the masthead. */
+  --color-accent: #C2401C; /* Vermilion — the one accent: masthead mark, fleuron, hover ink, the press-button offset plate. */
+  --color-accent-hover: #9E3315; /* Deep vermilion. */
+  --color-accent-pressed: #9E3315;
+  --color-accent-ink: #F6F1E7; /* Paper on vermilion. */
+  --color-accent-2: #4A6741; /* Moss — the OK/success state. Editorial green, not traffic-light green. */
+  --font-display: 'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif; /* Local editorial serif stack — no webfont, no network. */
+  --font-body: 'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif; /* Serif throughout; italics carry the secondary voice. */
+  --font-ui: 'Avenir Next', Avenir, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Compositor's sans — uppercase micro-labels, badges, buttons. */
+  --font-mono: 'SF Mono', 'Cascadia Code', Consolas, Menlo, monospace; /* Tabular values, kbd hints. */
+  --text-xs: 0.625rem; /* 10px — uppercase sans micro-labels (badges, colophon). */
+  --text-sm: 0.75rem; /* 12px — hints, buttons. */
+  --text-base: 0.875rem; /* 14px — compact editorial body; the source surface is print-dense. */
+  --text-md: 1.1875rem; /* 19px — proof titles / front-page heads. */
+  --text-lg: 1.5rem; /* 24px — extrapolated up the ramp for larger surfaces. */
+  --text-xl: 2rem; /* 32px — extrapolated. */
+  --text-2xl: 2.75rem; /* 44px — extrapolated masthead scale. */
+  --leading-tight: 1.22; /* Proof titles. */
+  --leading-normal: 1.45;
+  --tracking-kicker: 0.14em; /* Uppercase sans labels (publication line, badges). */
+  --tracking-label: 0.18em; /* Section labels between flanking rules. */
+  --tracking-wide: 0.2em; /* The press button. */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --radius-sm: 2px; /* Check boxes, range thumbs — set squarish, like lead type. */
+  --radius-md: 3px; /* Segmented controls, buttons, kbd caps. */
+  --radius-lg: 3px; /* Nothing gets rounder than 3px except the status dot (a circle). */
+  --motion-duration-fast: 140ms; /* Ink transitions — hover color, segmented toggle. */
+  --motion-duration-normal: 160ms; /* Check-stamp scale-in. */
+  --motion-duration-slow: 380ms; /* Staggered rise on open (55ms per item). */
+  --motion-easing-default: cubic-bezier(0.22, 1, 0.36, 1); /* Settling-paper decelerate. */
+  --motion-easing-stamp: cubic-bezier(0.34, 1.56, 0.64, 1); /* The one overshoot — the checkmark stamps in. */
+  --shadow-press: 3px 3px 0px 0px #C2401C; /* Offset-plate shadow on the primary button; :active translates into it (the press). */
+}

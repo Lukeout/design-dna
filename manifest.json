@@ -1,0 +1,37 @@
+{
+  "name": "luke",
+  "version": "0.1.0",
+  "description": "Luke's design DNA — the reference instance of the design-dna format.",
+  "owner": { "name": "Luke" },
+  "vibes": [
+    {
+      "id": "analog",
+      "name": "Analog",
+      "mode": "light",
+      "description": "Warm-paper editorial. Swiss grid, hairline rules, optical serifs, oldstyle figures, barely-there grain. Flat and print-like; motion is punctuation.",
+      "source": "gauche/DESIGN.md + src/styles (theme-analog)"
+    },
+    {
+      "id": "fluent",
+      "name": "Fluent",
+      "mode": "light",
+      "description": "Microsoft Fluent 2 re-tuned off the corporate default: every neutral warmed toward paper, brand swapped to left-bank blue, paired key+ambient shadows, 8px surfaces.",
+      "source": "gauche/DESIGN.md + src/styles (theme-fluent)"
+    },
+    {
+      "id": "geometric-orange",
+      "name": "Geometric Orange",
+      "mode": "dark",
+      "description": "The GEX-RAY identity: instrument-panel near-black, one amber used with conviction, geometric display type over uppercase mono labels, square corners, scanline + noise texture.",
+      "source": "gexray-landing (gex-ray.com)"
+    },
+    {
+      "id": "pressroom",
+      "name": "Pressroom",
+      "mode": "light",
+      "description": "Editorial letterpress: newsprint cream, real ink, one vermilion, serif throughout, double masthead rules, an offset-plate button that physically presses.",
+      "source": "substack-pdf-pro (popup/options UI)"
+    }
+  ],
+  "patterns": ["astro", "expo"]
+}

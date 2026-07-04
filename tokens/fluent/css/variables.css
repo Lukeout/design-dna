@@ -1,0 +1,58 @@
+/* Generated from tokens.json by design-dna (npm run build) — do not edit. Vibe: fluent */
+:root {
+  --color-bg: #F3F1EC; /* ~Fluent neutralBackground3, warmed toward paper. Pure #FFFFFF banned even here. */
+  --color-surface: #FBFAF7; /* ~neutralBackground1, warmed. */
+  --color-surface-raised: #FEFDFB; /* Raised: card / dialog. */
+  --color-recessed: #ECEAE4; /* ~neutralBackground4, warmed. */
+  --color-ink: #262420; /* ~neutralForeground1, warmed. */
+  --color-ink-muted: #4A4740; /* ~neutralForeground2. */
+  --color-ink-faint: #706C63; /* ~neutralForeground3/4. */
+  --color-border: #D3D1CD; /* ~neutralStroke1, warmed — visible hairlines, Fluent style. */
+  --color-border-faint: #E4E1DB; /* ~neutralStroke2, warmed. */
+  --color-accent: #2B4C7E; /* Same left-bank blue carrier as analog — coherence law. */
+  --color-accent-hover: #243F68;
+  --color-accent-pressed: #1B2F4E;
+  --color-accent-ink: #FBFAF7;
+  --color-accent-2: #BF4A32; /* Vermilion desaturated ~10% for screen luminance. */
+  --font-display: 'Inter Variable', Inter, 'Segoe UI', system-ui, sans-serif; /* Segoe substitute. Inter is the app voice here — and ONLY here (never a display face in analog). */
+  --font-body: 'Inter Variable', Inter, 'Segoe UI', system-ui, sans-serif;
+  --font-ui: 'Inter Variable', Inter, 'Segoe UI', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono Variable', 'JetBrains Mono', ui-monospace, monospace;
+  --font-wordmark: 'Fraunces Variable', Fraunces, Georgia, serif; /* Byte-identical Fraunces lockup across themes (opsz 144, SOFT 30, WONK 1). */
+  --text-xs: 0.8rem;
+  --text-sm: 0.875rem; /* 14px — Fluent's dense UI body size. */
+  --text-base: 1rem;
+  --text-md: 1.25rem;
+  --text-lg: 1.5625rem;
+  --text-xl: 1.9531rem;
+  --text-2xl: 2.4414rem;
+  --text-3xl: 3.0518rem;
+  --text-4xl: 3.8147rem;
+  --leading-tight: 1.1;
+  --leading-snug: 1.3;
+  --leading-normal: 1.55;
+  --measure-default: 72ch;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --space-10: 128px;
+  --radius-sm: 4px; /* Controls. */
+  --radius-md: 8px; /* Surfaces. */
+  --radius-lg: 12px; /* Hero surfaces. Never 16–24px over-rounding. */
+  --motion-duration-ultrafast: 50ms;
+  --motion-duration-fast: 150ms;
+  --motion-duration-normal: 200ms;
+  --motion-duration-slow: 300ms;
+  --motion-easing-default: cubic-bezier(0, 0, 0, 1); /* Fluent decelerate — the enter curve doubles as default. */
+  --motion-easing-enter: cubic-bezier(0, 0, 0, 1);
+  --motion-easing-exit: cubic-bezier(1, 0, 1, 1); /* Fluent accelerate. */
+  --shadow-1: 0px 1px 2px 0px #1C1A1724, 0px 0px 2px 0px #1C1A171F; /* Fluent shadow2 — always paired key + ambient; a single flat drop-shadow is a Tailwind tell. */
+  --shadow-2: 0px 4px 8px 0px #1C1A1724, 0px 0px 2px 0px #1C1A171F; /* Fluent shadow8. */
+  --shadow-lg: 0px 14px 28px 0px #1C1A1733, 0px 0px 8px 0px #1C1A171F; /* Fluent shadow28 — warm-ink-tinted, never pure black. */
+}

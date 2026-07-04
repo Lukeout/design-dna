@@ -1,0 +1,57 @@
+/* Generated from tokens.json by design-dna (npm run build) — do not edit. Vibe: analog */
+:root {
+  --color-bg: #F4EFE6; /* Canvas — chalky warm off-white. Pure #FFFFFF is banned. */
+  --color-surface: #FBF9F3; /* Default block / card surface. */
+  --color-surface-raised: #FFFDF8; /* Raised: popover, dialog. */
+  --color-recessed: #ECE7DB; /* Wells / inputs. */
+  --color-ink: #1C1A17; /* Primary text — warm near-black. Pure #000000 is banned. */
+  --color-ink-muted: #5C5349; /* Secondary / meta. */
+  --color-ink-faint: #8C8578; /* Captions / placeholder. */
+  --color-border: #1C1A171F; /* Hairlines, not borders — ink at 12%. */
+  --color-border-faint: #1C1A1712; /* Ink at 7%. */
+  --color-accent: #2B4C7E; /* Left-bank blue — the brand carrier, byte-identical across analog and fluent. */
+  --color-accent-hover: #24406C;
+  --color-accent-pressed: #1D3355;
+  --color-accent-ink: #F4EFE6; /* Text on accent. */
+  --color-accent-2: #D4472B; /* Vermilion — riso misregistration + rare emphasis, ~10% coverage max. */
+  --color-accent-3: #B7B043; /* Dirty chartreuse — the un-corporate register. Use sparingly. */
+  --font-display: 'Fraunces Variable', Fraunces, Georgia, serif; /* Optical serif; lowercase headings. Wordmark sets opsz 144, SOFT 30, WONK 1. */
+  --font-body: 'Source Serif 4 Variable', 'Source Serif 4', Georgia, serif; /* Reading serif; oldstyle figures on. */
+  --font-ui: 'Hanken Grotesk', system-ui, sans-serif; /* Controls and small UI. */
+  --font-mono: 'Commit Mono', 'JetBrains Mono', ui-monospace, monospace; /* Machine voice — kickers, metadata, counts, code. */
+  --text-xs: 0.8rem; /* 12.8px — kicker labels, meta. */
+  --text-sm: 0.875rem; /* 14px — dense UI body. */
+  --text-base: 1rem; /* 16px — body. */
+  --text-md: 1.25rem; /* 20px — lede / subtitle. */
+  --text-lg: 1.5625rem; /* 25px — H3. Major-third (1.25) scale. */
+  --text-xl: 1.9531rem; /* 31.25px — H2. */
+  --text-2xl: 2.4414rem; /* 39px — H1. */
+  --text-3xl: 3.0518rem; /* 48.8px — page title. */
+  --text-4xl: 3.8147rem; /* 61px — large title. */
+  --leading-tight: 1.1;
+  --leading-snug: 1.3;
+  --leading-normal: 1.55;
+  --tracking-kicker: 0.09em; /* Uppercase mono kickers, 11–13px. */
+  --measure-default: 66ch; /* Reading column — long-form text never exceeds this. */
+  --space-1: 4px;
+  --space-2: 8px; /* Baseline grid unit — vertical rhythm is multiples of this. */
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --space-10: 128px;
+  --radius-sm: 0; /* Flat / print-like. No pills, no rounded cards. */
+  --radius-md: 2px;
+  --radius-lg: 4px;
+  --motion-duration-ultrafast: 50ms;
+  --motion-duration-fast: 150ms;
+  --motion-duration-normal: 200ms;
+  --motion-duration-slow: 300ms;
+  --motion-easing-default: cubic-bezier(0.2, 0, 0, 1); /* Ink easing. Motion is punctuation: opacity/position only, never scale-pop or bounce. */
+  --shadow-1: 0px 1px 0px 0px #1C1A171A; /* Deboss hairline. */
+  --shadow-2: 0px 1px 2px 0px #2823190F; /* Faint lift. */
+  --shadow-lg: 0px 8px 24px 0px #2823191A; /* Modals only. No colored glow, ever. */
+}

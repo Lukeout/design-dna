@@ -1,0 +1,58 @@
+/* Generated from tokens.json by design-dna (npm run build) — do not edit. Vibe: geometric-orange */
+:root {
+  --color-bg: #08080C; /* Near-black with a blue undertone — instrument-panel dark, not #000. */
+  --color-surface: #0E0E14;
+  --color-surface-raised: #141420;
+  --color-ink: #E8E6E3; /* Warm off-white text on dark. */
+  --color-ink-muted: #7A7880;
+  --color-ink-faint: #4A4852;
+  --color-border: #FFFFFF0F; /* White at 6% — hairline panel seams. */
+  --color-border-accent: #E8913A26; /* Amber at 15% — highlighted panel edges. */
+  --color-accent: #E8913A; /* GEX-RAY amber. The one color used with conviction. */
+  --color-accent-hover: #F0A050;
+  --color-accent-pressed: #C4692A;
+  --color-accent-ink: #050507; /* Near-black text on amber. */
+  --color-accent-glow: #E8913A1F; /* Amber at 12% — glow shadows and badge fills. */
+  --color-accent-2: #C4451A; /* Copper — the deep end of the amber gradient ramp. */
+  --color-teal: #3AE8C7; /* Instrument teal — data/positive-signal accents only. */
+  --color-positive: #3AE87A;
+  --color-negative: #E84A3A;
+  --font-display: Syne, sans-serif; /* Geometric display — wide, 700–800 weight, tight tracking. */
+  --font-body: 'DM Sans', sans-serif;
+  --font-ui: 'DM Sans', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace; /* The instrument voice — nav links, labels, buttons are uppercase mono. */
+  --text-xs: 0.6875rem; /* 11px — uppercase mono kickers and section labels. */
+  --text-sm: 0.75rem; /* 12px — nav links, chips. */
+  --text-base: 1rem;
+  --text-md: 1.125rem; /* 18px — card titles, logo text. */
+  --text-lg: 1.75rem; /* 28px — feature numerals. */
+  --text-xl: 2rem; /* 32px — stat figures. */
+  --text-2xl: 3.25rem; /* 52px — section headlines (fluid up to 4vw). */
+  --text-3xl: 4rem; /* 64px — CTA headline ceiling. */
+  --text-4xl: 7.5rem; /* 120px — hero title ceiling (fluid 8vw, floor 56px). */
+  --leading-tight: 0.95; /* Hero display leading. */
+  --leading-snug: 1.2;
+  --leading-normal: 1.6;
+  --tracking-tight: -0.03em; /* Display headlines. */
+  --tracking-wide: 0.1em; /* Uppercase mono nav/labels. */
+  --tracking-kicker: 0.2em; /* Section labels with the 24px amber rule prefix. */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 36px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --space-10: 140px; /* Section padding — sections breathe. */
+  --radius-sm: 0; /* Square. Geometric means geometric — buttons and panels have hard corners. */
+  --radius-md: 0;
+  --radius-lg: 3px; /* The one concession — tiny chips and kbd caps only. */
+  --motion-duration-fast: 300ms; /* Hover color/border shifts — deliberate, not snappy. */
+  --motion-duration-normal: 400ms;
+  --motion-duration-slow: 700ms; /* Scroll-reveal rise. */
+  --motion-easing-default: cubic-bezier(0.25, 0.1, 0.25, 1); /* CSS `ease` — transitions are unshowy fades and 20px rises. */
+  --shadow-glow: 0px 0px 30px 0px #E8913A1F; /* Amber CTA glow on hover — the one permitted glow. */
+  --shadow-glow-lg: 0px 0px 40px 0px #E8913A1F, 0px 0px 80px 0px #E8913A0F;
+}
