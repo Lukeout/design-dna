@@ -1,0 +1,63 @@
+---
+/**
+ * Nav — left-weighted masthead. Wordmark left, uppercase mono links right,
+ * hairline rule below. Tokens only; no raw hex, no ad-hoc sizes.
+ */
+interface Props {
+  brand: string;
+  links: { label: string; href: string }[];
+  current?: string;
+}
+const { brand, links, current } = Astro.props;
+---
+
+<header class="nav">
+  <a class="nav-brand" href="/">{brand}</a>
+  <nav>
+    <ul class="nav-links">
+      {links.map((l) => (
+        <li>
+          <a href={l.href} aria-current={current === l.href ? 'page' : undefined}>{l.label}</a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+</header>
+
+<style>
+  .nav {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--space-6);
+    padding: var(--space-4) var(--space-6);
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+  }
+  .nav-brand {
+    font-family: var(--font-display);
+    font-size: var(--text-md);
+    color: var(--color-ink);
+    text-decoration: none;
+  }
+  .nav-links {
+    display: flex;
+    gap: var(--space-5);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .nav-links a {
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    letter-spacing: var(--tracking-kicker, 0.09em);
+    text-transform: uppercase;
+    color: var(--color-ink-muted);
+    text-decoration: none;
+    transition: color var(--motion-duration-fast) var(--motion-easing-default);
+  }
+  .nav-links a:hover,
+  .nav-links a[aria-current='page'] {
+    color: var(--color-accent);
+  }
+</style>

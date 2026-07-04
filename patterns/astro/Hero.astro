@@ -1,0 +1,66 @@
+---
+/**
+ * Hero — asymmetric editorial opener. Kicker, display headline, lede, one CTA.
+ * Left-set inside a reading measure with a wide right margin. Never centered,
+ * no pill badge above the H1, no gradient anything.
+ */
+interface Props {
+  kicker?: string;
+  title: string;
+  lede?: string;
+  cta?: { label: string; href: string };
+}
+const { kicker, title, lede, cta } = Astro.props;
+---
+
+<section class="hero">
+  {kicker && <p class="hero-kicker">{kicker}</p>}
+  <h1 class="hero-title">{title}</h1>
+  {lede && <p class="hero-lede">{lede}</p>}
+  {cta && <a class="hero-cta" href={cta.href}>{cta.label}</a>}
+</section>
+
+<style>
+  .hero {
+    padding: var(--space-9, var(--space-8)) var(--space-6) var(--space-8);
+    background: var(--color-bg);
+  }
+  .hero-kicker {
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    letter-spacing: var(--tracking-kicker, 0.09em);
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin: 0 0 var(--space-4);
+  }
+  .hero-title {
+    font-family: var(--font-display);
+    font-size: var(--text-3xl, var(--text-2xl));
+    line-height: var(--leading-tight, 1.1);
+    color: var(--color-ink);
+    max-width: var(--measure-default, 66ch);
+    margin: 0 0 var(--space-4);
+  }
+  .hero-lede {
+    font-family: var(--font-body);
+    font-size: var(--text-md);
+    line-height: var(--leading-normal, 1.55);
+    color: var(--color-ink-muted);
+    max-width: var(--measure-default, 66ch);
+    margin: 0 0 var(--space-6);
+  }
+  .hero-cta {
+    display: inline-block;
+    font-family: var(--font-ui, var(--font-body));
+    font-size: var(--text-sm);
+    color: var(--color-accent-ink);
+    background: var(--color-accent);
+    border-radius: var(--radius-sm);
+    padding: var(--space-3) var(--space-5);
+    text-decoration: none;
+    transition: background var(--motion-duration-fast) var(--motion-easing-default);
+  }
+  .hero-cta:hover {
+    background: var(--color-accent-hover, var(--color-accent));
+  }
+</style>
