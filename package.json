@@ -1,0 +1,23 @@
+{
+  "name": "design-dna",
+  "version": "0.1.0",
+  "description": "An open, portable format for a person's design taste — DTCG tokens, named vibes, taste principles, and anti-patterns, validated by one schema.",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "design-dna-validate": "bin/validate.mjs"
+  },
+  "exports": {
+    ".": "./lib/validate.mjs",
+    "./schema": "./schema/design-dna.schema.json"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "validate": "node bin/validate.mjs"
+  },
+  "dependencies": {
+    "ajv": "8.20.0",
+    "ajv-formats": "3.0.1",
+    "style-dictionary": "5.5.0"
+  }
+}
