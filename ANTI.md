@@ -55,6 +55,15 @@ concrete enough to point at in review; several are grep-able.
 - **No animated grain/noise.** Texture is static or it's gone.
 - **No hover elevation-jumps** — hovers change ink (underline, weight, color),
   not shadow size.
+- **No perpetual ambient motion** — no always-running background animation
+  (shader fields, drifting waves, floating particles), full-viewport or not.
+  If it still moves when the user's hands are still, it's banned. A shader is
+  art only when it's a frozen frame.
+- **No input-tracked interpolation loops** — no pointermove-driven morphing,
+  cursor-proximity effects, or click ripples. Kinetic response is a discrete
+  CSS `:hover`/`:focus` transition on the target itself: one input, one
+  output, one duration. (Origin: gauche splash v1 — three simultaneous
+  kinetic systems literally hurt to look at.)
 
 ## Copy & chrome
 
