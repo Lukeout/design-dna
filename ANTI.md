@@ -55,10 +55,15 @@ concrete enough to point at in review; several are grep-able.
 - **No animated grain/noise.** Texture is static or it's gone.
 - **No hover elevation-jumps** — hovers change ink (underline, weight, color),
   not shadow size.
-- **No perpetual ambient motion** — no always-running background animation
-  (shader fields, drifting waves, floating particles), full-viewport or not.
-  If it still moves when the user's hands are still, it's banned. A shader is
-  art only when it's a frozen frame.
+- **Ambient motion is a single-signature privilege, not a texture.** At most
+  ONE ambient field per product, and it must be: **glacial** (drift you notice
+  only by looking away and back), **deaf to input** (no pointer/click/scroll
+  coupling of any kind), **composed** (a shaped mass with a calm zone under
+  all reading surfaces — never a full-viewport veil), and **frozen to a still
+  frame** under `prefers-reduced-motion` (static, not removed). Anything that
+  fails one of these is banned. (Amended 2026-07-08: began as a blanket ban
+  from gauche splash v1; Luke kept the Bayer dither field and killed only the
+  input-coupled motion — the field earns the privilege, the veil never did.)
 - **No input-tracked interpolation loops** — no pointermove-driven morphing,
   cursor-proximity effects, or click ripples. Kinetic response is a discrete
   CSS `:hover`/`:focus` transition on the target itself: one input, one
